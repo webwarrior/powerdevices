@@ -15,7 +15,7 @@ public class LoginActivity extends Activity {
     private Button okButton;
     private String _username;
     private String _password;
-    public static final String PREFS_NAME = "PowerDevices.dat";
+    private static final String PREFS_NAME = "PowerDevices.dat";
     /**
      * Called when the activity is first created.
      */
