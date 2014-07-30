@@ -30,25 +30,12 @@ public class BrowserActivity extends Activity{
     {
         super.onResume();
 
-//        Intent iin = getIntent();
-//        Bundle b = iin.getExtras();
-//
-//        if(b!=null)
-//        {
-//            _username =(String) b.get("username");
-//            _password =(String) b.get("password");
-//        }
-//        else
-//        {
-//
-//        }
-
         // Restore preferences
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         _username = settings.getString("username", "");
         _password = settings.getString("password", "");
 
-        setTitle("Locatiions list");
+        setTitle("Locations list");
 
         webview = (WebView) findViewById(R.id.webview);
         webview.getSettings().setJavaScriptEnabled(true);
